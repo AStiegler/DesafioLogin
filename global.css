@@ -1,0 +1,33 @@
+:root {
+
+    --yellow:#FFC632;
+    --gray-100:#AFB6C2;
+    --gray-200:#A9AFB9;
+    --h1-color:#D4CCB6;
+    --brown:#473404;
+
+    --background-main:#191816;
+    --form-background:#24221F;
+
+    font-size: 62.5%;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html, body {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-style: normal;
+    font-size: 1.6rem;
+    overflow: overlay;
+}

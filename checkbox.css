@@ -1,0 +1,66 @@
+.loginSectionTwo div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    display: flex;
+    gap: 0.5rem;
+    cursor: pointer;
+  
+    font-size: 2.2rem;
+  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .container input {
+    opacity: 0;
+    cursor: pointer;
+    height: 0px;
+    width: 0px;
+  
+  }
+  
+  .checkmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 2rem;
+    width: 2rem;
+    background-color: #24221F;
+    border: 1px solid #868686;
+    border-radius: 0.4rem;
+  }
+  
+  .container:hover input~.checkmark {
+    border-color: #FFC632;
+  }
+  
+  .container input:checked~.checkmark {
+    background-color: #FFC632;
+  
+  }
+  
+  .checkmark:after {
+    content: "";
+    display: none;
+  }
+  
+  .container input:checked~.checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    width: 0.5rem;
+    height: 1rem;
+    border: solid #191816;
+    border-width: 0 0.3rem 0.3rem 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
